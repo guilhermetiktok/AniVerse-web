@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onde Assistir — Aniverse</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌸</text></svg>">
+</head>
+<body data-page="assistir">
+<div id="loader" class="loader-screen"><div class="loader-logo">アニ<span>VERSE</span></div><div class="loader-bar"><div class="loader-fill"></div></div></div>
+<header id="site-header"></header>
+<main class="page container">
+  <h1 class="page-title">Onde <span class="accent">Assistir</span></h1>
+  <p class="page-sub">Encontre plataformas oficiais licenciadas para assistir seus animes favoritos — sem pirataria, sem riscos.</p>
+  <div class="filters" style="margin-bottom:26px">
+    <h3>🔎 Buscar anime</h3>
+    <div class="list-add-row">
+      <input type="search" id="watch-q" placeholder="Digite o nome do anime..." style="flex:1;min-width:220px;padding:11px 14px;border-radius:10px;border:1px solid rgba(139,92,246,.3);background:var(--bg-3);color:var(--text)">
+    </div>
+    <div id="watch-results"></div>
+  </div>
+  <div class="ad-slot" data-ad="assistir-top"><span>Espaço publicitário</span></div>
+  <section class="section">
+    <div class="section-head"><h2>📺 Populares agora</h2></div>
+    <div class="card-row" id="watch-popular"></div>
+  </section>
+  <p style="font-size:.78rem;color:var(--text-dim);margin-top:20px">A Aniverse não hospeda vídeos nem episódios. Todos os links apontam para serviços oficiais licenciados (Crunchyroll, Netflix, Prime Video, entre outros). A disponibilidade pode variar por região.</p>
+</main>
+<footer id="site-footer"></footer>
+<button id="back-top" class="back-top" aria-label="Voltar ao topo">↑</button>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/core.js"></script>
+<script src="../js/assistir.js"></script>
+</body>
+</html>
