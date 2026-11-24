@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aniverse — sua plataforma completa sobre animes: catálogo, temporadas, calendário de lançamentos, comunidade e recomendações.">
+<title>Aniverse — Universo dos Animes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌸</text></svg>">
+</head>
+<body data-page="home">
+
+<div id="loader" class="loader-screen"><div class="loader-logo">アニ<span>VERSE</span></div><div class="loader-bar"><div class="loader-fill"></div></div></div>
+
+<header id="site-header"></header>
+
+<main>
+  <!-- Banner principal -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="hero-content"></div>
+  </section>
+
+  <!-- Espaço publicitário -->
+  <div class="container"><div class="ad-slot" data-ad="home-top"><span>Espaço publicitário</span></div></div>
+
+  <!-- Animes em alta -->
+  <section class="section container" id="sec-trending">
+    <div class="section-head"><h2><span class="accent">🔥</span> Em alta agora</h2><a class="see-all" href="pages/catalogo.html?sort=popularity">Ver todos →</a></div>
+    <div class="card-row" id="row-trending"></div>
+  </section>
+
+  <!-- Mais bem avaliados -->
+  <section class="section container" id="sec-top">
+    <div class="section-head"><h2><span class="accent">⭐</span> Mais bem avaliados</h2><a class="see-all" href="pages/catalogo.html?sort=score">Ver todos →</a></div>
+    <div class="card-row" id="row-top"></div>
+  </section>
+
+  <div class="container"><div class="ad-slot" data-ad="home-mid"><span>Espaço publicitário</span></div></div>
+
+  <!-- Lançamentos / temporada atual -->
+  <section class="section container" id="sec-season">
+    <div class="section-head"><h2><span class="accent">📺</span> Temporada atual</h2><a class="see-all" href="pages/calendario.html">Calendário →</a></div>
+    <div class="card-row" id="row-season"></div>
+  </section>
+
+  <!-- Próximos lançamentos -->
+  <section class="section container" id="sec-upcoming">
+    <div class="section-head"><h2><span class="accent">🚀</span> Próximos lançamentos</h2></div>
+    <div class="card-row" id="row-upcoming"></div>
+  </section>
+
+  <!-- Recomendados / Você pode gostar -->
+  <section class="section container" id="sec-reco">
+    <div class="section-head"><h2><span class="accent">💜</span> Você pode gostar</h2></div>
+    <div class="card-row" id="row-reco"></div>
+    <p class="reco-hint" id="reco-hint"></p>
+  </section>
+
+  <!-- Espaço publicitário -->
+  <div class="container"><div class="ad-slot" data-ad="home-bottom"><span>Espaço publicitário</span></div></div>
+</main>
+
+<footer id="site-footer"></footer>
+<button id="back-top" class="back-top" aria-label="Voltar ao topo">↑</button>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
