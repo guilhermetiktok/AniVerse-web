@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunidade — Aniverse</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌸</text></svg>">
+</head>
+<body data-page="comunidade">
+<div id="loader" class="loader-screen"><div class="loader-logo">アニ<span>VERSE</span></div><div class="loader-bar"><div class="loader-fill"></div></div></div>
+<header id="site-header"></header>
+<main class="page container">
+  <div class="grid-2" style="grid-template-columns:1fr 340px">
+    <section>
+      <h1 class="page-title">Comunidade <span class="accent">Otaku</span></h1>
+      <p class="page-sub">Discussões, opiniões e publicações de fãs de animes.</p>
+      <div class="post-composer filters" style="margin-bottom:24px">
+        <h3 style="margin-bottom:12px">📝 Nova publicação</h3>
+        <textarea id="post-text" maxlength="500" placeholder="Compartilhe sua opinião sobre animes... (sem links)"></textarea>
+        <div style="display:flex;justify-content:flex-end;margin-top:12px">
+          <button class="btn btn-primary" id="post-send">Publicar</button>
+        </div>
+      </div>
+      <div id="post-feed"><p style="color:var(--text-dim)">Carregando publicações...</p></div>
+    </section>
+    <aside>
+      <div class="filters" style="margin-bottom:20px">
+        <h3>🏆 Mais comentados</h3>
+        <div id="ranking"><p style="color:var(--text-dim);font-size:.86rem">Carregando...</p></div>
+      </div>
+      <div class="filters">
+        <h3>💡 Regras da comunidade</h3>
+        <ul style="list-style:none;font-size:.84rem;color:var(--text-dim);display:flex;flex-direction:column;gap:9px;line-height:1.55">
+          <li>✅ Respeite todos os membros.</li>
+          <li>🚫 Links, spam e conteúdo ofensivo são bloqueados automaticamente.</li>
+          <li>🚫 Sem spoilers sem aviso.</li>
+          <li>🌸 Divirta-se e faça novos amigos otakus!</li>
+        </ul>
+      </div>
+      <div class="ad-slot" data-ad="comunidade-side" style="margin-top:20px;min-height:250px"><span>Espaço publicitário</span></div>
+    </aside>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<button id="back-top" class="back-top" aria-label="Voltar ao topo">↑</button>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/core.js"></script>
+<script src="../js/comunidade.js"></script>
+</body>
+</html>
