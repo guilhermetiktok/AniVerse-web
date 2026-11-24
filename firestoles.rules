@@ -1,0 +1,16 @@
+<!-- ============================================================
+     EXEMPLO DE INSERÇÃO DO GOOGLE ADSENSE (somente após aprovação)
+     1. No <head> de cada página, cole seu script oficial:
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+     2. Em cada <div class="ad-slot" data-ad="...">, substitua o
+        placeholder por uma unidade de anúncio, ex.:
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+     3. NUNCA invente códigos de anúncio. Use apenas códigos gerados
+        no painel do AdSense após a aprovação do site.
+     ============================================================ -->
